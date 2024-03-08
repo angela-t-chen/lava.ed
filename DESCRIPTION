@@ -1,0 +1,27 @@
+Package: lava.ed
+Title: Identify Low Acuity Emergency Department Presentations Using the Low Acuity Validation Algorithms (LAVA)
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Angela", "Chen", email = "chenang@wharton.upenn.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8418-1835")),
+           person("Ari", "Friedman", role = c("aut")),
+           person("Richard", "Kuzma", role = c("ctb")))
+Description: Identify low acuity visits in health data using the Low Acuity Validation 
+    Algorithms (LAVA) described in Chen, Kuzma, and Friedman (HSR 2024). You provide 
+    the data and apply the model of your choice. The models will flag visits that 
+    are predicted to be low acuity.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    stringr
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/angela-t-chen/lava.ed
+BugReports: https://github.com/angela-t-chen/lava.ed/issues
