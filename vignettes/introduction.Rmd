@@ -1,12 +1,6 @@
 ---
 title: "Introduction to the lava.ed R Package"
-output: 
-  github_document:
-    toc: true
-vignette: >
-  %\VignetteIndexEntry{introduction}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output: github_document
 ---
 
 ```{r, include = FALSE}
