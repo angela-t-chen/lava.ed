@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the lava.ed R Package"
 output: 
-  rmarkdown::html_vignette:
+  github_document:
     toc: true
 vignette: >
   %\VignetteIndexEntry{introduction}
@@ -112,10 +112,11 @@ The default output for the `lava.l` and `lava.l.sub` models will be the logit-tr
 The default output for the `lava.x` and `lava.x.sub` models will be a vector of predictions, indicating whether each observation is predicted to be low acuity.
 
 
-# Changing the probability threshold
+## Changing the probability threshold
 As described in Chen et al. (2024), while the default probability for visit classification is set at 0.5, researchers may adjust this threshold based on their specific research objectives. The adjustment process is straightforward and involves first predicting the probability of a value being low acuity. Classifications low acuity will then be based on whether the probability exceeds the chosen threshold.
 
 *Example using a 0.3 threshold for classification using `lava.x` or `lava.x.sub`:*
 
 `pred.prob <- predict(lava.l, processed_input, type = "prob")[, "Yes"]`
+
 `pred.prob.class <- as.factor(ifelse(pred.prob >= 0.3, "Yes", "No"))`

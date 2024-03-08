@@ -14,8 +14,7 @@ being classified as low acuity.
 
 ## Installation
 
-You can install the development version of lava.ed from
-[GitHub](https://github.com/) with:
+You can install the development version of lava.ed from Github with:
 
 ``` r
 # install.packages("devtools")
