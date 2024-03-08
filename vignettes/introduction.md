@@ -1,11 +1,5 @@
----
-title: "Introduction to the lava.ed R Package"
-output: 
-  github_document:
-  toc: true
-  keep_md: true
----
 
+# Introduction to the lava.ed R Package
 
 This vignette provides an overview of using the `lava.ed` R package to predict low acuity visits in health data. The package offers four trained models, detailed in Chen, Kuzma, and Friedman (2024), and includes a function called `rule_based_algos`. This function applies the logic of seven previously published ICD-10 code-based algorithms for visit classification. Please refer to the documentation for details on using the `rule_based_algos` function.
 
